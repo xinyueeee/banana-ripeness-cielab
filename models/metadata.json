@@ -1,0 +1,73 @@
+{
+  "version": "CIELAB (23-feature, plain SVC)",
+  "classifier": "Pipeline([StandardScaler(), SVC()])  -- scikit-learn defaults, RBF kernel, probability=False, no hyperparameter tuned",
+  "feature_set": [
+    "L_mean",
+    "L_median",
+    "L_std",
+    "L_p10",
+    "L_p90",
+    "a_mean",
+    "a_median",
+    "a_std",
+    "a_p10",
+    "a_p90",
+    "b_mean",
+    "b_median",
+    "b_std",
+    "b_p10",
+    "b_p90",
+    "foreground_fraction",
+    "ciede2000_to_unripe",
+    "ciede2000_to_ripe",
+    "ciede2000_to_overripe",
+    "ciede2000_to_rotten",
+    "dark_region_mean_L",
+    "h_std",
+    "dE_margin_mean"
+  ],
+  "frozen_features": [
+    "L_mean",
+    "L_median",
+    "L_std",
+    "L_p10",
+    "L_p90",
+    "a_mean",
+    "a_median",
+    "a_std",
+    "a_p10",
+    "a_p90",
+    "b_mean",
+    "b_median",
+    "b_std",
+    "b_p10",
+    "b_p90",
+    "foreground_fraction",
+    "ciede2000_to_unripe",
+    "ciede2000_to_ripe",
+    "ciede2000_to_overripe",
+    "ciede2000_to_rotten"
+  ],
+  "added_features": [
+    "dark_region_mean_L",
+    "h_std",
+    "dE_margin_mean"
+  ],
+  "n_features": 23,
+  "feature_selection": "the 3 added descriptors were chosen by greedy forward 5-fold CV macro-F1 on train + validation only",
+  "fitted_on": "train + validation = 12,916 rows (frozen pipeline features)",
+  "classes": [
+    "overripe",
+    "ripe",
+    "rotten",
+    "unripe"
+  ],
+  "ood_thresholds_from_validation": {
+    "p95": 1.1834174783317903,
+    "p99": 1.5471964164851228
+  },
+  "held_out_test_accuracy": 0.9483985765124555,
+  "held_out_test_macro_f1": 0.9490211684980565,
+  "v1_frozen_test_accuracy": 0.9359430604982206,
+  "note": "The 562-image test set was evaluated once. This rebuild reproduces that number from the bundled feature matrix."
+}

@@ -1,0 +1,5 @@
+class_name,prototype_L,prototype_a,prototype_b,training_images,prototype_source_subset
+unripe,50.98039215686274,-18.0,38.0,1902,train
+ripe,65.09803921568627,-6.0,54.0,3522,train
+overripe,52.15686274509804,0.0,31.0,2349,train
+rotten,59.6078431372549,1.0,43.0,4020,train
