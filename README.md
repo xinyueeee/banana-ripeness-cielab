@@ -172,8 +172,9 @@ on. The out-of-distribution warning is designed to flag exactly these images.
 
 ## Deploying (Streamlit Community Cloud)
 
-`requirements.txt`, `packages.txt` and `.streamlit/config.toml` are set up for a one-click
-deploy: push this folder to GitHub, then at share.streamlit.io point the app at `app.py`.
+`requirements.txt` and `.streamlit/config.toml` are set up for a one-click deploy: push
+this folder to GitHub, then at share.streamlit.io point the app at `app.py`. No
+`packages.txt` is needed -- `opencv-python-headless` bundles its own codecs.
 
 `.gitignore` deliberately excludes `assets/mascot/` (a decorative third-party image). It
 stays in the local folder and the submission ZIP, but is **not** pushed to the public
