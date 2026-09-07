@@ -8,8 +8,3 @@ results/
 *.pdf
 !assets/**/*.pdf
 .vs/
-
-# decorative mascot: excluded from the public deployment repo (third-party artwork).
-# The app falls back to a plain hero when it is absent. It stays in the local folder
-# and the submission ZIP.
-assets/mascot/
